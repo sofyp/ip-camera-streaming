@@ -1,5 +1,5 @@
 # ip-camera-streaming
-##Ennen kuin aloitat:
+## Ennen kuin aloitat:
 - lataa bootstrap: 
 `npm install bootstrap` TAI `yarn add bootstrap`
 - lataa node.js
