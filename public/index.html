@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tsekkaa onks jonoo</title>
+    <link href="css/css.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="body-container">
+        <nav class="navbar"></nav>
+        <div class="outer-content">
+            <div class="header">
+                <div class="logo">
+                    <div class="logo-box logo-1"></div>
+                    <div class="logo-box logo-2"></div>
+                    <div class="logo-box logo-3"></div>
+                </div>
+                <span>onks jonoo</span>
+            </div>
+            <div class="content">
+                <div class="content-card video-card">
+                    <div id="stream1">
+                        <div id="playerElement"></div>
+                    </div>
+                </div>
+                <div class="content-card menu-card">
+                    <div id="get-date"></div>
+                    <div id="sodexo-menu"></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <img src="../img/metropolialogo.png" alt="Metropolia logo">
+            <span>Myyrmäki Leiritie 1</span>
+        </footer>
+    </div>
+<script src="app.js"></script>
+<script type="text/javascript" src="//player.wowza.com/player/latest/wowzaplayer.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    WowzaPlayer.create('playerElement',
+        {
+            "license":"PLAY2-9ExAf-G3Dyz-axfxT-TDbad-DCADH",
+            "title":"",
+            "description":"",
+            "sourceURL":"http%3A%2F%2F192.168.100.14%3A1935%2Flive%2Fcamera.stream%2Fplaylist.m3u8",
+            "autoPlay":false,
+            "volume":"75",
+            "mute":false,
+            "loop":false,
+            "audioOnly":false,
+            "uiShowQuickRewind":true,
+            "uiQuickRewindSeconds":"30"
+        }
+    );
+</script>
+</body>
+</html>

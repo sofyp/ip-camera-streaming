@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(to bottom right, #E69B0A, #C8367A);
+    background-size: cover;
+    margin: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+nav{
+    background-color: #2e2e2f !important;
+}
+footer{
+    background-color: #2e2e2f;
+    height: 10vmin;
+    width: 100vw;
+    position: absolute;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    color: #FFFFFF;
+}
+footer img {
+    width: 30vmin;
+}
+footer {
+    font-size: 2.5vmin;
+}
+.body-container{
+    width: auto;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-bottom: 5vmax;
+    height: calc(100vh - 23vmin - 16px - 4vh); /*15vh includes .header margin-top & .header height. 96px includes navbar & footer*/
+}
+@media screen and (max-width: 900px) {
+    .content{
+        height: auto;
+    }
+}
+.outer-content{
+    flex-direction: column;
+}
+.header{
+    height: 13vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 2vh 0 2vh 0;
+}
+.header span {
+    font-family: "Roboto" , sans-serif;
+    font-size: 4.4vmin;
+    color: #FFFFFF;
+}
+.logo{
+    height: 100%;
+    width: 11vmin; /*width: 80px;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px 0 20px;
+}
+.logo-box{
+    box-sizing: border-box;
+    border-radius: 1.4vmin; /*10px;*/
+    background-color: #2e2e2f;
+    width: 3.4vmin; /*25px;*/
+}
+.logo-1{
+    height: 80%;
+}
+.logo-2{
+    height: 50%;
+}
+.logo-3{
+    height: 25%;
+}
+.content-card{
+    font-family: "Roboto" , sans-serif;
+    letter-spacing: 0.05em;
+    display: flex;
+    background-color: #2e2e2f;
+    max-height: 65vh;
+    position: relative;
+    border-radius: 12px;
+    color: #FFFFFF;
+}
+.video-card{
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+}
+#stream1{
+    width: 100vmin;
+    max-width: 100%;
+    padding: 1%;
+    display: inline-block;
+}
+#playerElement{
+    width:100%;
+    height:0;
+    padding:0 0 56.25% 0
+}
+.menu-card{
+    font-size: 2vmin;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+}
+#get-date{
+    font-size: 2.4vmin;
+    margin-bottom: 2vmin;
+}
+#sodexo-menu div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#sodexo-menu div p:nth-child(2) {
+    min-width: max-content;
+    margin-left: 5px;
+}
+@media screen and (max-width: 900px) {
+    .video-card {
+        width: 90vmin;
+        margin-bottom: 20px;
+        padding: 2vh 0;
+    }
+    .menu-card {
+        width: 90vw;
+        margin-bottom: 20px;
+        font-size: 1.6vmax;
+    }
+    #get-date{
+        margin: 1vmax 0 2vmax 0;
+        font-size: 1.8vmax;
+    }
+    .content-card{
+        max-height: initial;
+    }
+}
