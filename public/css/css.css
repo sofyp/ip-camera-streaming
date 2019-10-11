@@ -41,7 +41,7 @@ footer {
     padding-bottom: 5vmax;
     height: calc(100vh - 23vmin - 16px - 4vh); /*15vh includes .header margin-top & .header height. 96px includes navbar & footer*/
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .content{
         height: auto;
     }
@@ -115,7 +115,7 @@ footer {
 }
 .menu-card{
     font-size: 2vmin;
-    width: 40vw;
+    width: 45vw;
     display: flex;
     flex-direction: column;
     padding: 2vw;
@@ -127,13 +127,31 @@ footer {
 #sodexo-menu div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    box-sizing: unset;
 }
-#sodexo-menu div p:nth-child(2) {
-    min-width: max-content;
+#sodexo-menu div p {
+    width: 50%;
+}
+#sodexo-menu div div{
     margin-left: 5px;
+    justify-content: space-between;
+    width: 30%;
 }
-@media screen and (max-width: 900px) {
+#sodexo-menu div div p:nth-child(1){
+    min-width: max-content;
+}
+#sodexo-menu div div p:nth-child(2){
+    margin-left: 1.5vw;
+    min-width: max-content;
+    display: block;
+}
+@media screen and (max-width: 1200px) {
+    #sodexo-menu div p {
+        margin-bottom: 0.5rem;
+    }
+}
+@media screen and (max-width: 1000px) {
     .video-card {
         width: 90vmin;
         margin-bottom: 20px;
@@ -150,5 +168,13 @@ footer {
     }
     .content-card{
         max-height: initial;
+    }
+    #sodexo-menu div p {
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    #sodexo-menu div div p:nth-child(2){
+        display: none;
     }
 }
