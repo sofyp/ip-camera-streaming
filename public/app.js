@@ -44,13 +44,16 @@ const fixData = (menuJson) => {
     today.innerHTML = thisDay;
 
     let menu=  '';
-    menu = menuJson.courses.forEach((t) => data.push({name: t.title_fi, price: t.price}));
+    menu = menuJson.courses.forEach((t) => data.push({name: t.title_fi, allergenes: t.properties, price: t.price}));
     console.log(data);
     const createMenu = document.getElementById('sodexo-menu');
-    createMenu.innerHTML = data.map(({name, price}) => `
+    createMenu.innerHTML = data.map(({name, allergenes, price}) => `
             <div>
                <p>${name}</p>
-               <p>${price}</p> 
+               <div>
+                  <p>${price}</p>
+                  <p>${ allergenes === undefined ? '' : allergenes}</p>
+               </div>
                </div>
 `).join('');
 
